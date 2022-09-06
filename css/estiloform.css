@@ -1,0 +1,306 @@
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'love';
+	src: url('fonte/Basillion.otf')format('opentype');
+}
+
+body {
+	font-size: 1em;
+	font-family:love,"Trebuchet MS", Helvetica, sans-serif;
+	
+	background: #e6e6e6;
+}
+
+/*
+**** Layout ****
+*/
+#area-cabecalho {
+	background-color: #f7b600;
+	padding: 15px;
+	text-align: center;
+}
+
+#area-logo, #area-menu {
+	padding: 10px;
+}
+
+#area-principal {
+	width: 920px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+#area-principal1 {
+	width: 500px;
+	background-color: #565656;
+	border: #4e4e4e;
+	margin: 0px;
+	padding: 0px;
+	float: center;
+}
+
+#area-postagens {
+	width: 660px;
+	float: left;
+}
+
+#area-lateral {
+	width: 240px;
+	float: right;
+}
+
+#area-lateral1 {
+	width: 240px;
+	float: right;
+}
+
+.postagem{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: white;
+}
+
+.conteudo-lateral {
+	background: white;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.postagem-lateral {
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px dotted #CCC;
+}
+
+#rodape {
+
+	clear: both;
+	text-align: center;
+	padding: 15px;
+	background: #CCC;
+    position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+    
+}
+
+/*
+**** Formatação do menu ****
+*/
+a {
+	text-decoration: none;	
+}
+
+a:link, a:visited {
+	color: #f7b600;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+	color: #FFF;
+	padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+	color: #f7b600;
+	background: #FFF;
+	text-decoration: none;
+}
+
+/*
+**** Formatações em geral ****
+*/
+#formularioo > h1 {
+	color: #4e4e4e;
+	font-size: 2.5em;
+}
+
+h2 {
+	color: #f7b600;
+}
+
+h3 {
+	color: #565656;
+	background: #CCC;
+	padding: 5px;
+}
+
+.branco{
+	color: white;
+}
+
+.data-postagem {
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.lista1{
+	box-sizing: border-box;
+	margin: 15px;
+	padding: 15px;
+	outline: 15px;
+	
+}
+
+.imagem{
+	display: flex;
+	width: 200px;
+	
+	
+}
+
+
+.imagem-redonda{
+	width: 200px;
+	border-radius: 80%;
+	
+}
+
+.flex-center{
+	display: flex;
+	float: left;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+}
+
+.flex-right{
+	
+	display:  flex;
+	align-items: right;
+	justify-content: right;
+	width: 200px;
+	height: 200px;
+}
+
+
+.flex-left{
+	
+	display: flex;
+	float: left;
+	align-items: left;
+	justify-content: left;
+	width: 200px;
+	height: 200px;
+}
+
+#area-principal2 {
+	
+	width: auto;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+#formulario{
+	display: block;
+	width: 300px;
+	background-color: #565656;
+}
+
+h1, h2 {
+    font-size: 3rem;
+    color: #565656;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  h1::before {
+    display: block;
+  }
+  
+  h2::before {
+    content: "🐅";
+    display: block;
+  }
+
+ #formularioo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+  
+  .form {
+    
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+  }
+  
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    display: block;
+    width: 100%;
+  }
+  
+  .form label {
+    color: black;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form input,
+  .form textarea {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+  }
+  
+  .form textarea {
+    min-height: 13rem;
+    resize: vertical;
+  }
+  
+  .form input:hover,
+  .form input:focus,
+  .form textarea:hover,
+  .form textarea:focus {
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dc8ff;
+  }
+  
+  .form button {
+    display: block;
+    padding: 1rem;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .form button:hover,
+  .form button:focus {
+    outline: none;
+    background: #09d;
+  }
+
+  .preto{
+    color: #4e4e4e;
+  }
+
+.cinza{
+    color: #4e4e4e;
+}
